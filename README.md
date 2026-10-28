@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☀️ LUCIS
+# LUCIS
 ### Solar PV Power Forecasting Using Machine Learning & Deep Learning
 
 **Day-ahead forecasting of solar power generation using historical plant data**
@@ -14,13 +14,13 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **LUCIS** is a solar photovoltaic (PV) power forecasting project that compares **six machine learning and deep learning approaches** for predicting the next 24 hours of electricity generation from the previous 168 hours (seven days) of plant output.
 
 The project covers data preprocessing, chronological train/validation/test splits, model training, evaluation, visual comparison, and a next-day forecasting demonstration.
 
-## 🎯 Objectives
+## Objectives
 
 - Forecast **24 hourly power values** using **168 hours of historical generation**.
 - Compare traditional machine learning and deep learning forecasting methods.
@@ -28,7 +28,7 @@ The project covers data preprocessing, chronological train/validation/test split
 - Visualize predictions and model performance.
 - Demonstrate a next-day forecast using a trained LSTM.
 
-## 📊 Dataset
+## Dataset
 
 The study uses historical generation records from a **5 MW solar PV plant in Telangana, India**.
 
@@ -49,7 +49,7 @@ The study uses historical generation records from a **5 MW solar PV plant in Tel
 
 **Public repository note:** The original dataset, processed datasets, and certain large model artifacts are excluded from this repository. Redistribution rights for the source data should be verified before publishing it.
 
-## 🔄 Forecasting Workflow
+## Forecasting Workflow
 
 ```text
 15-minute solar PV generation records
@@ -76,7 +76,7 @@ The study uses historical generation records from a **5 MW solar PV plant in Tel
        Metrics, plots, and comparison
 ```
 
-## 🧠 Models Implemented
+## Models Implemented
 
 | Model | Approach |
 | :--- | :--- |
@@ -87,7 +87,7 @@ The study uses historical generation records from a **5 MW solar PV plant in Tel
 | Attention LSTM | LSTM with attention mechanism |
 | Enhanced LSTM | Modified LSTM architecture |
 
-## 🏆 Model Performance
+## Model Performance
 
 The final evaluation covers **243 day-ahead forecast instances** from January–August 2026 (**5,832 hourly predictions**).
 
@@ -107,7 +107,7 @@ The final evaluation covers **243 day-ahead forecast instances** from January–
 - **N-HiTS** achieved the lowest MAE among the deep learning models.
 - N-HiTS used a shorter continuous historical training period, so the results should not be interpreted as a perfectly controlled architecture-only comparison.
 
-## 📈 Results and Visualizations
+## Results and Visualizations
 
 ### R² comparison across six models
 
@@ -123,7 +123,7 @@ The final evaluation covers **243 day-ahead forecast instances** from January–
 
 The next-day demonstration forecasts **September 1, 2026**, based on historical data available through August 31, 2026. This is a forecasting demonstration; actual September 1 observations are not provided as verification here.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Area | Tools |
 | :--- | :--- |
@@ -134,7 +134,7 @@ The next-day demonstration forecasts **September 1, 2026**, based on historical 
 | Visualization | Matplotlib |
 | Additional data tools | OpenPyXL, Xarray, NetCDF4, CDS API |
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 LUCIS-Solar-Power-Forecasting/
@@ -159,7 +159,7 @@ LUCIS-Solar-Power-Forecasting/
 
 Additional data-processing, plotting, and experiment scripts are included in the repository.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -189,7 +189,7 @@ The repository does **not** include the source dataset, the `processed/` data fo
 
 The included `outputs/` directory lets you inspect saved model evaluations and visualizations without retraining.
 
-## ⚠️ Limitations
+## Limitations
 
 - The principal forecasting experiments use historical generation rather than a complete operational weather-integrated forecasting system.
 - Some large training data files and trained artifacts are intentionally excluded.
@@ -197,7 +197,7 @@ The included `outputs/` directory lets you inspect saved model evaluations and v
 - Unconstrained models may produce small positive nighttime forecasts.
 - Results are specific to the available plant data and experimental setup.
 
-## 🔮 Future Work
+## Future Work
 
 - Integrate irradiance, temperature, and wind measurements.
 - Improve nighttime prediction constraints and calibration.
@@ -205,10 +205,21 @@ The included `outputs/` directory lets you inspect saved model evaluations and v
 - Package the preprocessing and inference workflow for easier reproduction.
 - Explore deployment and automated forecast updates.
 
-## 👥 Project Credits
+## Project Credits
 
-Developed as a collaborative academic project. Please credit all team contributors according to the project submission and repository contribution history.
+**LUCIS — Solar PV Power Forecasting** was developed as a collaborative academic project.
 
-## 📄 Data and License Notes
+**Contributors:**
 
-Source data is not redistributed here pending verification of its sharing permissions. No open-source license is granted by this README; a separate `LICENSE` file is required if the project owners decide to license the code for reuse.
+- Hemavarshini Sivakumar
+- Divyadarshini P
+
+The project involved data preprocessing, machine learning and deep learning model development, performance evaluation, and solar power forecasting.
+
+## Data and License Notes
+
+The project uses historical solar PV generation data for academic research and model evaluation.
+
+The original dataset is not included in this repository. Some large trained models and intermediate datasets are also excluded.
+
+The source code is shared for educational and research reference. No open-source license has been added at this stage.
