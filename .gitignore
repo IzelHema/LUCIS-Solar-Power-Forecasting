@@ -1,0 +1,37 @@
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.cdsapirc
+*.pem
+*.key
+
+# Original and processed datasets
+india_dataset.xlsx
+processed/
+weather/
+
+# Training logs and checkpoints
+lightning_logs/
+runs/
+checkpoints/
+
+# Large trained models
+models/random_forest.joblib
+models/nhits/
+
+# Temporary files
+*.zip
+.DS_Store
+Thumbs.db

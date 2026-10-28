@@ -1,0 +1,13 @@
+
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+joblib
+neuralforecast==3.3.0
+torch
+openpyxl
+xarray
+netCDF4
+cdsapi
